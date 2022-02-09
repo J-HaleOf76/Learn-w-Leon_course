@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "class08-materials/class08-materials"
+		},
+		{
+			"path": "class08-materials/class08-solutions"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
