@@ -1,10 +1,14 @@
+/* Khan-academy  */
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  margin: 0%;
+  padding:0%;
+
 }
 
 /* Clear fix hack */
-.clearfix:after {
+/* .clearfix:after {
      content: ".";
      display: block;
      clear: both;
@@ -15,28 +19,35 @@
 
 .clear {
 	clear: both;
-}
+} */
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
+section{
+  border: 2px solid rgb(173, 8, 8);
+  margin-top: 10px;
+
+}
+section>img{
+  float: left;
+}
+section>h1{
+/* clear: left; */
+/* padding: 5px; */
+padding-left: 30px;
+}
+section>ul{
+  float: right;
+  padding: 20px;
 
 }
 
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
-}
-
-footer {
+section>ul>li{
+  clear: both;
+  float: right;
+  
+  padding: 10px;
 
 }
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
