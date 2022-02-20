@@ -1,8 +1,29 @@
-# Course
+# Course from Leon on Front-end development
 
-- The main folder structure is very much Out-Of_Control / BUT it's working.
+Files from Discord and the Lessons are on Twitch.
 
-This is a free online course from Leon.
-Videos on Twitch and the materials can be downloaded from Discord.
+HTML, CSS, and JS will start on Feb 17th. 2022
 
-## HTML, CSS and JS is coming this week.. wk12?
+```css
+Floats
+
+nav,main,aside{
+    float: left;
+    width: 10%;
+}
+main{
+    float: left;
+    width: 50%;
+}
+aside{
+    float: left;
+    width: 40%;
+}
+```
+
+## This will split the page into the 3 parts that I'm looking for.
+
+- - - -
+
+# Don't worry about the extra shit #
+
