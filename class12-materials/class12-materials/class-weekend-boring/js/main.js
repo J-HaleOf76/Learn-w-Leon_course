@@ -1,23 +1,30 @@
 document.querySelector('#check').addEventListener('click', check)
-document.querySelector('#placeToSee').innerText
+
+document.querySelector("#clear").addEventListener('click', clear)
 
 function check() {
 
-  const day = document.querySelector('#day').value
+  const day = document.querySelector('#day').value.toLowerCase()
+  const placeToSee = document.querySelector("#placeToSee")
 
   //Conditionals go here
   // Is it a class day weekday or boring day
-if(day === "Thursday" || day === "Tuesday" ){
-  alert("Today is a ClassDay");
-}else if (day === "Sunday") {
-  alert("Today you have Office Hours")
+if(day === "thursday" || day === "tuesday" ){
+  placeToSee.innerText = "CLASS DAY";
+  // alert("Today is a ClassDay");
+}else if (day === "sunday") {
+  placeToSee.innerText = "Weekend"
 } else {
-  // alert("Not Today Fool")
+  placeToSee.innerText = "Boring"
   
-  document.querySelector("#placeToSee").innerHTML = #day().value;
 }
 
 }
+function clear() {
+  const clear = document.querySelector('placeToSee').innerText = "";
+
+}
+// clear();
 
 
 
