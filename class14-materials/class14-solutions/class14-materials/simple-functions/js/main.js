@@ -7,7 +7,7 @@ function addTwoNumbers(num1, num2){
 
 addTwoNumbers(2,3)
 
-//create a function that multiplys three numbers and console logs the product
+//create a function that multiplies three numbers and console logs the product
 
 function multiplysThreeNumbers(zebra1,zebra2,zebra3){
     const product = zebra1 * zebra2 * zebra3
