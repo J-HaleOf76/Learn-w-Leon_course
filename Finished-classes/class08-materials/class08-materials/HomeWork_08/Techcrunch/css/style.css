@@ -1,0 +1,150 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding:0px;
+}
+
+/* Clear fix hack
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+} */
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* :Root{
+  nav-color: rgba(110,110,110 .1);
+} */
+
+
+body {
+  font-size: 18px;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "nav main aside"
+  "nav main aside"
+  ;
+  /* height: 100vh; */
+}
+ul a {
+  list-style-type: none;
+  text-decoration: none;
+}
+/* 
+        NAV Left 
+ */
+nav {
+  grid-area: nav;
+  /* border: 1px rgb(0, 0, 0) solid; */
+  height: 100vh;
+  margin-right: 10px;
+}
+nav>img {
+  padding-bottom: 5px;
+}
+nav>a {
+  padding: 1.7rem;
+  color: rgb(110 110 110);
+  /* font-family: monospace; */
+  font-size: larger;
+}
+nav>ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+nav>ul>li{
+  padding: 10px 0px 15px 5px;
+  font-size: 1.9rem;
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*   MAIN  CENTER   */
+main{
+  grid-area: "main";
+  font-size: larger;
+  /* border: 1px solid red; */
+}
+main h1 {
+  font-weight: 800;
+  margin-top: .2em;
+}
+main span{
+  font-weight: normal;
+}
+main>img {
+  /* width: 50%; */
+  content: url(/class-layout-photos/techcrunch.png);
+  
+}
+
+/* ******************
+* ASIDE  Right     *
+****************** */
+aside {
+  grid-area: "aside";
+  height: 100vh;
+  max-width: 90%;
+  margin-left: 20px;
+}
+aside>ul {
+text-decoration: none;
+list-style-type: none;
+}
+aside ul li {
+  padding-left: 5px;
+  font-weight:800;
+ 
+}
+aside ul li h2{
+  color: rgb(8, 8, 8);
+  padding: 10px 5px 0px 5px;
+}
+aside>ul>li span{
+  color: rgb(20, 20, 20);
+  padding:20px 20px 0px 5px;
+ font-weight: normal;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* header {
+
+}
+
+footer {
+
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* Float works but smashed easily */
+/* nav,main,aside {
+  float: left;
+  width: 10%;
+}
+main{
+  width: 50%;
+}
+aside{
+  width: 40%;
+} */
+
+/* Grid style */
